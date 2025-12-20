@@ -53,6 +53,7 @@ h3,
 h4 {
   line-height: 1.2;
   color: var(--clr-fg-alt);
+  text-align: center;
 }
 
 h1 {
@@ -408,4 +409,64 @@ main {
   .scroll-container {
     display: none;
   }
+
+  #button2 .btn {
+      font-size: 2rem;
+      padding: 8px 12px;
+  }
+}
+
+/* slider */
+.slider-wrapper {
+    width: 100%;
+    max-width: 700px;             
+    margin: 60px auto;
+    position: relative;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    animation: fade 0.5s ease-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* slider Buttons */
+#button2 .btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: whitesmoke;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-size: 3rem;
+    background: rgba(0,0,0,0.4);
+    user-select: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+#button2 .btn:hover {
+    background: lightgray;
+    color: black;
 }
