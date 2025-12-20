@@ -28,6 +28,9 @@
           <a class="link link--nav" href="#projects">Projects</a>
         </li>
         <li class="nav__list-item">
+          <a class="link link--nav" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav__list-item">
           <a class="link link--nav" href="#skills">Skills</a>
         </li>
         <li class="nav__list-item">
@@ -48,14 +51,16 @@
       <h2 class="about__role">CS Brunel Uni Student, Interested In CyberSecurity & Web Design</h2>
       <p class="about__desc">
         Hi! My name is Rose (she/her) and this is my personal portfolio website. I am currently in my second year of
-        Brunel University in West London studying a BSc Computer Science (Network Computing). I am looking to complete an industrial placement during my third year in
-        IT: CyberSecurity & DevOps, or in Web Design & Development. My hobbies are Photography, Graphic Design, and Music/Music Production!
+        Brunel University in West London studying a BSc Computer Science (Network Computing). I am looking to complete
+        an industrial placement during my third year in
+        IT: CyberSecurity & DevOps, or in Web Design & Development. My hobbies are Photography, Graphic Design, and
+        Music/Music Production!
 
         <br><br>Have a look around my website to see what I have worked on so far.
       </p>
 
       <div class="about__contact center">
-        <a href="./mycv.pdf">
+        <a href="/assets/mycv.pdf">
           <span class="btn btn--outline">My CV</span>
         </a>
 
@@ -185,33 +190,77 @@
       </div>
     </section>
 
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery">
+      <h2 class="section__title">Gallery</h2>
+      <h3>A Collection of my Photography Work</h3>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div class="slide fade" style="display: block;">
+            <img src="assets/image1.png" alt="image one">
+          </div>
+          <div class=" slide fade">
+            <img src="assets/image2.png" alt="image two">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image3.png" alt="image three">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image4.png" alt="image four">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image5.png" alt="image five">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image6.png" alt="image six">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image7.png" alt="image seven">
+          </div>
+          <div class="slide fade">
+            <img src="assets/image8.png" alt="image eight">
+          </div>
+          <!-- classes for previous and next buttons -->
+          <div id="button2">
+            <div class="btn prev">&#10094;</div>
+            <div class="btn next">&#10095;</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Skills -->
     <section class="section skills" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain">HTML</li>
-        <li class="skills__list-item btn btn--plain">CSS</li>
-        <li class="skills__list-item btn btn--plain">JavaScript</li>
-        <li class="skills__list-item btn btn--plain">React JS</li>
-        <li class="skills__list-item btn btn--plain">Java</li>
-        <li class="skills__list-item btn btn--plain">Python 3</li>
-        <li class="skills__list-item btn btn--plain">Agile</li>
-        <li class="skills__list-item btn btn--plain">MySQL</li>
-        <li class="skills__list-item btn btn--plain">Microsoft Products</li>
-        <li class="skills__list-item btn btn--plain">Procreate</li>
-        <li class="skills__list-item btn btn--plain">Photography</li>
-        <li class="skills__list-item btn btn--plain">Videography & Video Editing</li>
-        <li class="skills__list-item btn btn--plain">Music Production & Engineering</li>
-        <li class="skills__list-item btn btn--plain">Public Speaking & Presenting</li>
-      </ul>
+      <div class="button">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">React JS</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Python 3</li>
+          <li class="skills__list-item btn btn--plain">Agile</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">Microsoft Products</li>
+          <li class="skills__list-item btn btn--plain">Procreate</li>
+          <li class="skills__list-item btn btn--plain">Photography</li>
+          <li class="skills__list-item btn btn--plain">Videography & Video Editing</li>
+          <li class="skills__list-item btn btn--plain">Music Production & Engineering</li>
+          <li class="skills__list-item btn btn--plain">Public Speaking & Presenting</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Contact -->
     <section class="section contact center" id="contact">
       <h2 class="section__title">Contact</h2>
-      <a href="mailto:rmahtani1206@gmail.com">
-        <span class="btn btn--outline">Email me</span>
-      </a>
+      <div class="button">
+        <a href="mailto:rmahtani1206@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </div>
     </section>
   </main>
 
