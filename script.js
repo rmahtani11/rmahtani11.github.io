@@ -1,26 +1,23 @@
-const body = document.body
+// definitions for slider functionality
+    let currentSlide = 0;
+    let slides = document.querySelectorAll(".slide");
 
-const btnTheme = document.querySelector('.fa-moon')
-const btnHamburger = document.querySelector('.fa-bars')
+    let nextBtn = document.querySelector(".next");
+    let prevBtn = document.querySelector(".prev");
+    // function states when to go to next slide
+    function next() {
+        let nextSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.display = "none";
+        slides[nextSlide].style.display = "block";
+        currentSlide = nextSlide;
+    }
+    nextBtn.addEventListener("click", next)
+    // event listener for previous slide button
+    prevBtn.addEventListener("click", function () {
+        let prevSlide = currentSlide == 0 ? slides.length - 1 : currentSlide - 1;
+        slides[currentSlide].style.display = "none";
+        slides[prevSlide].style.display = "block"
+        currentSlide = prevSlide;
+    })
 
-const addThemeClass = (bodyClass, btnClass) => {
-  body.classList.add(bodyClass)
-  btnTheme.classList.add(btnClass)
-}
-
-btnHamburger.addEventListener('click', displayList)
-
-const scrollUp = () => {
-	const btnScrollTop = document.querySelector('.scroll-top')
-
-	if (
-		body.scrollTop > 500 ||
-		document.documentElement.scrollTop > 500
-	) {
-		btnScrollTop.style.display = 'block'
-	} else {
-		btnScrollTop.style.display = 'none'
-	}
-}
-
-document.addEventListener('scroll', scrollUp)
+    setInterval(next, 5000)
